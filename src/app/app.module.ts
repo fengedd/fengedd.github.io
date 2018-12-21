@@ -2,12 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { UserComponent } from './user/user.component';
+import { AboutComponent } from './components/about/about.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent
+    AboutComponent,
   ],
   imports: [
     BrowserModule
