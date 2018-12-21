@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GlobalConfig } from './GlobalConfig';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
-  author = 'Edd Feng';
-  domain = "https://google.com"
+export class AppComponent {  
+
+  constructor(){}
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.    
+  }
 }
+
