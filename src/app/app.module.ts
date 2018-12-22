@@ -6,6 +6,8 @@ import { AboutComponent } from './components/about/about.component';
 import { HeaderComponent } from './components/header/header.component';
 import { GlobalConfig } from './GlobalConfig';
 import { FooterComponent } from './components/footer/footer.component';
+import { GithubprojectlistComponent } from './components/githubprojectlist/githubprojectlist.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -14,9 +16,11 @@ import { FooterComponent } from './components/footer/footer.component';
     AboutComponent,
     HeaderComponent,
     FooterComponent,
+    GithubprojectlistComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [GlobalConfig],
   bootstrap: [AppComponent]
