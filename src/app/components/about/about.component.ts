@@ -8,8 +8,8 @@ import { GlobalConfig } from 'src/app/GlobalConfig';
 })
 export class AboutComponent implements OnInit {
   name: String;
-  githubLink: String;
-  linkedinLink: String;
+  githubId: String;
+  linkedinId: String;
   globalConfig: GlobalConfig;
   constructor(private globalconfig: GlobalConfig) { 
     this.globalconfig = globalconfig    
@@ -17,8 +17,8 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
     this.name = this.globalconfig.name;
-    this.githubLink = this.globalconfig.githubLink;
-    this.linkedinLink = this.globalconfig.linkedinLink;  
+    this.githubId = this.globalconfig.githubId;
+    this.linkedinId = this.globalconfig.linkedinId;  
   }
 
 }

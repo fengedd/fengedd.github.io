@@ -8,16 +8,16 @@ import { GlobalConfig } from 'src/app/GlobalConfig';
 })
 export class FooterComponent implements OnInit {
   
-  githubLink: String;
-  linkedinLink: String;
+  githubId: String;
+  linkedinId: String;
   name:String;  
   constructor(private globalconfig: GlobalConfig) {     
   }
 
   ngOnInit() {
     this.name = this.globalconfig.name;
-    this.githubLink = this.globalconfig.githubLink;
-    this.linkedinLink = this.globalconfig.linkedinLink;  
+    this.githubId = this.globalconfig.githubId;
+    this.linkedinId = this.globalconfig.linkedinId;  
   }
 
 }

@@ -7,6 +7,7 @@ import { GithubprojectsService} from 'src/app/service/githubprojects.service';
   selector: 'app-githubprojectlist',
   templateUrl: './githubprojectlist.component.html',
   styleUrls: ['./githubprojectlist.component.css']
+  
 })
 export class GithubprojectlistComponent implements OnInit {
 
@@ -17,17 +18,18 @@ export class GithubprojectlistComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.githubLink = this.globalconfig.githubLink;
+    this.githubLink = this.globalconfig.githubLink + this.globalconfig.githubId;
     this.githubService = this.githubProjectsService;
     this.showProjectsList();
   }
 
+  // TODO: See testing guide to test Dependency Injection (e.g. mock service)
   showProjectsList() {
     this.githubService.getGithubProjectsList()
       .subscribe((data) => {        
         this.projectData = data
       });
-      
   }
+
 
 }
