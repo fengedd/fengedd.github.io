@@ -8,6 +8,7 @@ import { GlobalConfig } from './GlobalConfig';
 import { FooterComponent } from './components/footer/footer.component';
 import { GithubprojectlistComponent } from './components/githubprojectlist/githubprojectlist.component';
 import { HttpClientModule } from '@angular/common/http';
+import { GithubProjectsPipe } from './pipes/github-projects.pipe';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     FooterComponent,
     GithubprojectlistComponent,
+    GithubProjectsPipe,
   ],
   imports: [
     BrowserModule,

@@ -12,6 +12,7 @@ export class GithubprojectsService {
   }
   
   getGithubProjectsList() {
+    // TODO , sorted?: string, direction?: string, type?: string
     console.log('Getting github projects list...')
     return this.http.get(this.githubUrl)
   }

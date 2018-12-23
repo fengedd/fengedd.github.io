@@ -1,3 +1,1 @@
-<p>
-  {{projectData}}
-</p>
+<div **ngFor="let proj of projectData" [innerHTML]="proj | githubProjects"></div>

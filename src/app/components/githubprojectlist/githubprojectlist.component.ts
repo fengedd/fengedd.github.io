@@ -24,10 +24,8 @@ export class GithubprojectlistComponent implements OnInit {
 
   showProjectsList() {
     this.githubService.getGithubProjectsList()
-      .subscribe((data) => {
-        console.log(data);
+      .subscribe((data) => {        
         this.projectData = data
-        
       });
       
   }
