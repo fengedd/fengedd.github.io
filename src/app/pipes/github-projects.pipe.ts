@@ -17,8 +17,7 @@ export class GithubProjectsPipe implements PipeTransform {
     `
     <ul>
     <li><b>${name}</b> </li>
-    <li><b>${html_url}</b> </li>
-    <li><b>${description}</b> </li>
+    <li><b>${html_url}</b> </li>    
     <li><b>${created_at}</b> </li>
     <li><b>${updated_at}</b> </li>
     <li><b>${git_url}</b> </li>

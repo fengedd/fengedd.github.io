@@ -6,7 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class GithubprojectsService {
 
-  githubUrl = 'https://api.github.com/users/fengedd/repos'
+  // TODO: include option to query the service with different parameters for github API
+  githubUrl = 'https://api.github.com/users/fengedd/repos?sort=updated'
   constructor(private http: HttpClient) { 
     console.log('GithubProjectsService running...')
   }
