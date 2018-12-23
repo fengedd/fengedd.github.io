@@ -9,10 +9,11 @@ export class GithubProjectsPipe implements PipeTransform {
     const name = json.name;
     const html_url = json.html_url;
     const description = json.description;
-    const created_at = json.created_at;
-    const updated_at = json.updated_at;
+    const created_at = new Date(json.created_at);
+    const updated_at = new Date(json.updated_at);
     const git_url = json.git_url;
     const language = json.language;
+    // TODO: Add date pipe short for created_at and updated_at
     const result = 
     `
     <ul>
