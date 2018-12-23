@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GlobalConfig } from './GlobalConfig';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +9,6 @@ import { GlobalConfig } from './GlobalConfig';
 
 export class AppComponent {  
 
-  constructor(){}
-  ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.    
-  }
+
 }
 
