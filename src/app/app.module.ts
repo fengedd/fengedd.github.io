@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
@@ -10,6 +10,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { GithubprojectlistComponent } from './components/githubprojectlist/githubprojectlist.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GithubProjectsPipe } from './pipes/github-projects.pipe';
+import { AppRoutingModule } from 'src/app/app-routing.module';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -20,15 +22,17 @@ import { GithubProjectsPipe } from './pipes/github-projects.pipe';
     FooterComponent,
     GithubprojectlistComponent,
     GithubProjectsPipe,
+    PageNotFoundComponent,    
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [GlobalConfig],
   bootstrap: [AppComponent]
 })
 export class AppModule { 
-  // constructor(router: Router) {}
+  constructor(router: Router) {}
 
 }
