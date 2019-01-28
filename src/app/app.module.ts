@@ -12,8 +12,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { GithubProjectsPipe } from './pipes/github-projects.pipe';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { NavbarComponent } from './components/header/navbar/navbar.component';
-
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { ResumeComponent } from './components/resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +25,14 @@ import { NavbarComponent } from './components/header/navbar/navbar.component';
     GithubprojectlistComponent,
     GithubProjectsPipe,
     PageNotFoundComponent,
-    NavbarComponent,    
+    NavbarComponent,
+    ResumeComponent,    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PdfViewerModule
   ],
   providers: [GlobalConfig],
   bootstrap: [AppComponent]
