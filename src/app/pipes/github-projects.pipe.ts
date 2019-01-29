@@ -4,7 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'githubProjects'
 })
 export class GithubProjectsPipe implements PipeTransform {
-  
+
   transform(json: any): any {
     const name = json.name;
     const html_url = json.html_url;
@@ -14,20 +14,20 @@ export class GithubProjectsPipe implements PipeTransform {
     const git_url = json.git_url;
     const language = json.language;
     // TODO: Add date pipe short for created_at and updated_at
-    const result = 
+    const result =
     `
     <ul>
     <li><b>${name}</b> </li>
-    <li><b>${html_url}</b> </li>    
+    <li><b>${html_url}</b> </li>
     <li><b>${created_at}</b> </li>
     <li><b>${updated_at}</b> </li>
     <li><b>${git_url}</b> </li>
     <li><b>${language}</b> </li>
     </ul>
-    `
-    
+    `;
+
     return result;
-    
+
   }
 }
 

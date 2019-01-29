@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GlobalConfig } from 'src/app/GlobalConfig';
+import { GlobalConfig } from '../../GlobalConfig';
 
 @Component({
   selector: 'app-about',
@@ -11,14 +11,14 @@ export class AboutComponent implements OnInit {
   githubId: String;
   linkedinId: String;
   globalConfig: GlobalConfig;
-  constructor(private globalconfig: GlobalConfig) { 
-    this.globalconfig = globalconfig    
+  constructor(private globalconfig: GlobalConfig) {
+    this.globalconfig = globalconfig;
   }
 
   ngOnInit() {
     this.name = this.globalconfig.name;
     this.githubId = this.globalconfig.githubId;
-    this.linkedinId = this.globalconfig.linkedinId;  
+    this.linkedinId = this.globalconfig.linkedinId;
   }
 
 }

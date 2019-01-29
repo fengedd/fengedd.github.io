@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as fs from 'fs';
 
 @Component({
   selector: 'app-resume',
@@ -7,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ResumeComponent implements OnInit {
-  src: string = "/resume.pdf";
+  src = 'https://vadimdez.github.io/ng2-pdf-viewer/pdf-test.pdf';
   constructor() { }
-  
   ngOnInit() {
+
   }
 
 }

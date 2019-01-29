@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GlobalConfig } from 'src/app/GlobalConfig';
+import { GlobalConfig } from '../../GlobalConfig';
 
 @Component({
   selector: 'app-footer',
@@ -7,17 +7,17 @@ import { GlobalConfig } from 'src/app/GlobalConfig';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-  
+
   githubId: String;
   linkedinId: String;
-  name:String;  
-  constructor(private globalconfig: GlobalConfig) {     
+  name: String;
+  constructor(private globalconfig: GlobalConfig) {
   }
 
   ngOnInit() {
     this.name = this.globalconfig.name;
     this.githubId = this.globalconfig.githubId;
-    this.linkedinId = this.globalconfig.linkedinId;  
+    this.linkedinId = this.globalconfig.linkedinId;
   }
 
 }

@@ -10,7 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { GithubprojectlistComponent } from './components/githubprojectlist/githubprojectlist.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GithubProjectsPipe } from './pipes/github-projects.pipe';
-import { AppRoutingModule } from 'src/app/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
@@ -26,7 +26,7 @@ import { ResumeComponent } from './components/resume/resume.component';
     GithubProjectsPipe,
     PageNotFoundComponent,
     NavbarComponent,
-    ResumeComponent,    
+    ResumeComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +37,7 @@ import { ResumeComponent } from './components/resume/resume.component';
   providers: [GlobalConfig],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
+export class AppModule {
   constructor(router: Router) {}
 
 }

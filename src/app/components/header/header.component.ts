@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GlobalConfig } from 'src/app/GlobalConfig';
+import { GlobalConfig } from '../../GlobalConfig';
 
 @Component({
   selector: 'app-header',
@@ -7,12 +7,12 @@ import { GlobalConfig } from 'src/app/GlobalConfig';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  name:String;  
-  constructor(private globalconfig: GlobalConfig) {     
+  name: String;
+  constructor(private globalconfig: GlobalConfig) {
   }
 
   ngOnInit() {
-    this.name = this.globalconfig.name
+    this.name = this.globalconfig.name;
   }
 
 }
