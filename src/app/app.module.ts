@@ -1,20 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Router } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
+
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { SimplePdfViewerModule } from 'simple-pdf-viewer';
+
+
+import { GlobalConfig } from './GlobalConfig';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeaderComponent } from './components/header/header.component';
-import { GlobalConfig } from './GlobalConfig';
 import { FooterComponent } from './components/footer/footer.component';
 import { GithubprojectlistComponent } from './components/githubprojectlist/githubprojectlist.component';
-import { HttpClientModule } from '@angular/common/http';
-import { GithubProjectsPipe } from './pipes/github-projects.pipe';
-import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { ResumeComponent } from './components/resume/resume.component';
+
+
+import { GithubProjectsPipe } from './pipes/github-projects.pipe';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +39,8 @@ import { ResumeComponent } from './components/resume/resume.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    PdfViewerModule
+    PdfViewerModule,
+    SimplePdfViewerModule
   ],
   providers: [GlobalConfig],
   bootstrap: [AppComponent]

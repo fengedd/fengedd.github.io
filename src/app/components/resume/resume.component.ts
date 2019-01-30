@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as fs from 'fs';
+// import { readFileSync } from 'fs';
 
 @Component({
   selector: 'app-resume',
@@ -8,10 +8,14 @@ import * as fs from 'fs';
 })
 
 export class ResumeComponent implements OnInit {
-  src = 'https://vadimdez.github.io/ng2-pdf-viewer/pdf-test.pdf';
+  pdfSrc = 'http://kmmc.in/wp-content/uploads/2014/01/lesson2.pdf';
   constructor() { }
   ngOnInit() {
-
+    /*
+    const buf: Buffer = readFileSync('./resume.pdf');
+    console.log(buf.readUInt8(0));
+    */
+//    console.log('hey');
   }
 
 }

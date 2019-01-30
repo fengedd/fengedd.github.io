@@ -11,11 +11,11 @@ import { CommonModule } from '@angular/common';
 export class AppRoutingModule { }
 */
 
-import { NgModule }             from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 
-import { PageNotFoundComponent }    from './components/page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { AboutComponent } from './components/about/about.component';
 import { GithubprojectlistComponent } from './components/githubprojectlist/githubprojectlist.component';
 import {ResumeComponent} from './components/resume/resume.component';
