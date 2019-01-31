@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
-import { SimplePdfViewerModule } from 'simple-pdf-viewer';
 
 
 import { GlobalConfig } from './GlobalConfig';
@@ -40,7 +39,6 @@ import { GithubProjectsPipe } from './pipes/github-projects.pipe';
     HttpClientModule,
     AppRoutingModule,
     PdfViewerModule,
-    SimplePdfViewerModule
   ],
   providers: [GlobalConfig],
   bootstrap: [AppComponent]
