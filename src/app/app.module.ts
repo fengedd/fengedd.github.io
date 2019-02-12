@@ -9,7 +9,6 @@ import { GlobalConfig } from './GlobalConfig';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
-import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { GithubprojectlistComponent } from './components/githubprojectlist/githubprojectlist.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
@@ -24,7 +23,6 @@ import { GithubProjectsPipe } from './pipes/github-projects.pipe';
   declarations: [
     AppComponent,
     AboutComponent,
-    HeaderComponent,
     FooterComponent,
     GithubprojectlistComponent,
     GithubProjectsPipe,
