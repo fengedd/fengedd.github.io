@@ -3,10 +3,7 @@ import { NgModule } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-
-import { PdfViewerModule } from 'ng2-pdf-viewer';
-import { SimplePdfViewerModule } from 'simple-pdf-viewer';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { GlobalConfig } from './GlobalConfig';
 
@@ -39,8 +36,7 @@ import { GithubProjectsPipe } from './pipes/github-projects.pipe';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    PdfViewerModule,
-    SimplePdfViewerModule
+    NgbModule
   ],
   providers: [GlobalConfig],
   bootstrap: [AppComponent]
