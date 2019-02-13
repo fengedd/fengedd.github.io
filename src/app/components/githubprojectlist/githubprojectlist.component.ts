@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GlobalConfig } from '../../GlobalConfig';
-import { GithubprojectsService} from '../../service/githubprojects.service';
+import { GithubprojectsService} from '../../service/githubprojects/githubprojects.service';
 import { IconService } from '../../service/icon/icon.service';
 
 
