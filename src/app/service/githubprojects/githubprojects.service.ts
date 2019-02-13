@@ -5,7 +5,6 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class GithubprojectsService {
-  // TODO: Move project service into its own folder.
   githubRepoUrl = 'https://api.github.com/users/fengedd/repos?sort=updated';
 
   constructor(private http: HttpClient) {

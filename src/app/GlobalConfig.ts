@@ -1,8 +1,8 @@
 export class GlobalConfig {
   name: String = 'Edd Feng';
-  githubId: String = 'fengedd';
+  email: String = 'fengedd@gmail.com';
   githubLink = 'https://github.com/';
-  linkedinId = 'fengedd';
+  id = 'fengedd';
   linkedinLink: String = 'https://linkedin.com/in/';
   twitterLink: String;
   facebookLink: String;

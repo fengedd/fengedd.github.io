@@ -12,5 +12,9 @@ export class IconService {
     this.matIconRegistry.addSvgIconSet(
       this.domSanitizer.bypassSecurityTrustResourceUrl('../../../assets/icons/program_languages.svg')
     );
+
+    this.matIconRegistry.addSvgIconSet(
+      this.domSanitizer.bypassSecurityTrustResourceUrl('../../../assets/icons/media.svg')
+    );
   }
 }

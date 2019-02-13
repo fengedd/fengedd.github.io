@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GlobalConfig } from '../../GlobalConfig';
+import { IconService } from '../../service/icon/icon.service';
 
 @Component({
   selector: 'app-footer',
@@ -11,13 +12,13 @@ export class FooterComponent implements OnInit {
   githubId: String;
   linkedinId: String;
   name: String;
-  constructor(private globalconfig: GlobalConfig) {
+  constructor(private globalconfig: GlobalConfig, private icService: IconService) {
   }
 
   ngOnInit() {
     this.name = this.globalconfig.name;
-    this.githubId = this.globalconfig.githubId;
-    this.linkedinId = this.globalconfig.linkedinId;
+    this.githubId = this.globalconfig.id;
+    this.linkedinId = this.globalconfig.id;
   }
 
 }

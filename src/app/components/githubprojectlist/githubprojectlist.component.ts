@@ -17,7 +17,7 @@ export class GithubprojectlistComponent implements OnInit {
   constructor(private globalconfig: GlobalConfig, private ghService: GithubprojectsService, private icService: IconService) {}
 
   ngOnInit() {
-    this.githubLink = this.globalconfig.githubLink + this.globalconfig.githubId;
+    this.githubLink = this.globalconfig.githubLink + this.globalconfig.id;
     this.githubService = this.ghService;
     this.showProjectsList();
   }
