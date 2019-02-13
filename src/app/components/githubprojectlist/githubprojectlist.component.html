@@ -1,13 +1,7 @@
 <ul class="list-unstyled">
     <div *ngFor="let proj of projectData">
         <li class="media">
-            <img src="..." class="mr-3" alt="...">           
-            
-            <div class="media-body">
-                <h5 class="mt-0 mb-1">List-based media object</h5>
-                <div [innerHTML]="proj | githubProjects"></div>
-            </div>
+            <div [innerHTML]="proj | githubProjects"></div>                            
         </li>
-        
     </div>
 </ul>
