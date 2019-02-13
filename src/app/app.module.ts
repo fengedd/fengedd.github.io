@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { GlobalConfig } from './GlobalConfig';
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
@@ -34,7 +35,8 @@ import { GithubProjectsPipe } from './pipes/github-projects.pipe';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    MatIconModule
   ],
   providers: [GlobalConfig],
   bootstrap: [AppComponent]

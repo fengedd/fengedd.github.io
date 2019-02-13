@@ -1,6 +1,10 @@
+<mat-icon svgIcon="TypeScript"></mat-icon>
+<mat-icon svgIcon="Java"></mat-icon>
+<mat-icon svgIcon="Python"></mat-icon>
+<mat-icon svgIcon="JavaScript"></mat-icon>
 <ul class="list-unstyled">
     <div *ngFor="let proj of projectData">
-        <li class="media">
+        <li class="media">            
             <div [innerHTML]="proj | githubProjects"></div>                            
         </li>
     </div>

@@ -20,7 +20,7 @@ export class GithubProjectsPipe implements PipeTransform {
     <div class="media">
   <img src="..." class="mr-3" alt="...">
   <div class="media-body">
-    <h5 class="mt-0" href=><a href="${html_url}">${name}</a> ${updated_at}</h5>    
+    <h5 class="mt-0" href=><a href="${html_url}">${name}</a> ${updated_at}</h5>
     ${description}
     ${git_url}
     ${language}

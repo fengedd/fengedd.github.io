@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {DomSanitizer} from '@angular/platform-browser';
-import {MatIconRegistry} from '@angular/material';
 import { GlobalConfig } from '../../GlobalConfig';
 import { GithubprojectsService} from '../../service/githubprojects.service';
+import { IconService } from '../../service/icon/icon.service';
 
 
 @Component({
@@ -14,17 +13,14 @@ export class GithubprojectlistComponent implements OnInit {
 
   githubLink: String;
   githubService: GithubprojectsService;
+  iconService: IconService;
   projectData: any;
-  // tslint:disable-next-line:max-line-length
-  constructor(private globalconfig: GlobalConfig, private githubProjectsService: GithubprojectsService, iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
-    iconRegistry.addSvgIcon(
-      'thumbs-up',
-      sanitizer.bypassSecurityTrustResourceUrl('../../../assets/icons8-java-filled.svg'));
-  }
+  constructor(private globalconfig: GlobalConfig, private ghService: GithubprojectsService, private icService: IconService) {}
 
   ngOnInit() {
     this.githubLink = this.globalconfig.githubLink + this.globalconfig.githubId;
-    this.githubService = this.githubProjectsService;
+    this.githubService = this.ghService;
+    this.iconService = this.icService;
     this.showProjectsList();
   }
 
