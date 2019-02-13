@@ -13,14 +13,12 @@ export class GithubprojectlistComponent implements OnInit {
 
   githubLink: String;
   githubService: GithubprojectsService;
-  iconService: IconService;
   projectData: any;
   constructor(private globalconfig: GlobalConfig, private ghService: GithubprojectsService, private icService: IconService) {}
 
   ngOnInit() {
     this.githubLink = this.globalconfig.githubLink + this.globalconfig.githubId;
     this.githubService = this.ghService;
-    this.iconService = this.icService;
     this.showProjectsList();
   }
 

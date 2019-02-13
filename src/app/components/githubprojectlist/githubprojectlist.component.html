@@ -1,11 +1,18 @@
-<mat-icon svgIcon="TypeScript"></mat-icon>
-<mat-icon svgIcon="Java"></mat-icon>
-<mat-icon svgIcon="Python"></mat-icon>
-<mat-icon svgIcon="JavaScript"></mat-icon>
-<ul class="list-unstyled">
+<div class="mx-5">
+<ul class="list-unstyled ">
     <div *ngFor="let proj of projectData">
-        <li class="media">            
-            <div [innerHTML]="proj | githubProjects"></div>                            
-        </li>
+        <div class="media border-bottom p-3">
+            
+            <span class="mr-3 "> <mat-icon svgIcon="{{proj.language}}"></mat-icon>
+            </span>
+            <div class="media-body">
+                <h5 class="mt-0"><a href="{{proj.html_url}}">{{proj.name}}</a> <small><i> Updated on:  {{proj.updated_at | date}}</i></small></h5>                  
+                {{proj.description}}                
+            </div>            
+            <div class="bd"></div>
+        </div>        
     </div>
 </ul>
+</div>
+
+<!-- <div [innerHTML]="proj | githubProjects"></div> -->

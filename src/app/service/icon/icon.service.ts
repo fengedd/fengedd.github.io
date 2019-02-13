@@ -8,6 +8,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class IconService {
 
   constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer) {
+    console.log('Starting Icon Service...');
     this.matIconRegistry.addSvgIconSet(
       this.domSanitizer.bypassSecurityTrustResourceUrl('../../../assets/icons/program_languages.svg')
     );
