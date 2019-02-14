@@ -9,16 +9,18 @@ import { IconService } from '../../service/icon/icon.service';
 })
 export class FooterComponent implements OnInit {
 
-  githubId: String;
-  linkedinId: String;
-  name: String;
+  name: string;
+  githubUrl: string;
+  linkedinUrl: string;
+  currentYear: number;
   constructor(private globalconfig: GlobalConfig, private icService: IconService) {
   }
 
   ngOnInit() {
     this.name = this.globalconfig.name;
-    this.githubId = this.globalconfig.id;
-    this.linkedinId = this.globalconfig.id;
+    this.githubUrl = this.globalconfig.githubLink + this.globalconfig.githubId;
+    this.linkedinUrl = this.globalconfig.linkedinLink + this.globalconfig.linkedinId;
+    this.currentYear = new Date(Date.now()).getFullYear();
   }
 
 }

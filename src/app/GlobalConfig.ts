@@ -1,10 +1,8 @@
 export class GlobalConfig {
-  name: String = 'Edd Feng';
-  email: String = 'fengedd@gmail.com';
+  name = 'Edd Feng';
+  email = 'fengedd@gmail.com';
   githubLink = 'https://github.com/';
-  id = 'fengedd';
-  linkedinLink: String = 'https://linkedin.com/in/';
-  twitterLink: String;
-  facebookLink: String;
-  instagramLink: String;
+  githubId = 'fengedd';
+  linkedinLink = 'https://linkedin.com/in/';
+  linkedinId = 'fengedd';
 }

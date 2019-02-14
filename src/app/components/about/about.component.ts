@@ -17,8 +17,6 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
     this.name = this.globalconfig.name;
-    this.githubId = this.globalconfig.id;
-    this.linkedinId = this.globalconfig.id;
   }
 
 }
