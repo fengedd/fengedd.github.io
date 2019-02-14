@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalConfig } from '../../GlobalConfig';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  name: string;
+
+  constructor(private globalConfig: GlobalConfig) { }
 
   ngOnInit() {
+    this.name = this.globalConfig.name;
   }
 
 }

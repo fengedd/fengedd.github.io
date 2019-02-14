@@ -10,6 +10,7 @@ import { IconService } from '../../service/icon/icon.service';
 export class FooterComponent implements OnInit {
 
   name: string;
+  email: string;
   githubUrl: string;
   linkedinUrl: string;
   currentYear: number;
@@ -18,6 +19,7 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
     this.name = this.globalconfig.name;
+    this.email = this.globalconfig.email;
     this.githubUrl = this.globalconfig.githubLink + this.globalconfig.githubId;
     this.linkedinUrl = this.globalconfig.linkedinLink + this.globalconfig.linkedinId;
     this.currentYear = new Date(Date.now()).getFullYear();

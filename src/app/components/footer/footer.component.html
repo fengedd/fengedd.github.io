@@ -1,37 +1,31 @@
 <!-- Footer -->
-<footer class="page-footer">
-
-  <!-- Footer Elements -->
-  <div class="container border">
+<footer class="page-footer bg-dark text-white border">
 
     <!-- Grid row-->
-    <div class="row justify-content-center">
-      <div class="col-sm-1">
+    <div class="container d-flex justify-content-center">
+      <div class="p-1">
         <!--Linkedin -->
-        <a href={{linkedinUrl}}>
+        <a class="circle" href={{linkedinUrl}}>
           <mat-icon svgIcon="linkedin"></mat-icon>
         </a>
       </div>
-      <div class="col-sm-1">
+      <div class="p-1">
         <!--GitHub-->
-        <a href={{githubUrl}}>
+        <a class="circle" href={{githubUrl}}>
           <mat-icon svgIcon="github"></mat-icon>
         </a>
       </div>
-      <div class="col-sm-1">
+      <div class="p-1">
         <!--Email -->
-        <a href={{linkedinLink}}>
+        <a class="circle" href="mailto:{{email}}">
           <mat-icon svgIcon="email"></mat-icon>
         </a>
       </div>
     </div>
     <!-- Grid row-->
 
-  </div>
-  <!-- Footer Elements -->
-
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© {{currentYear}} Copyright: {{name}}
+  <div class="footer-copyright text-center">© {{currentYear}} Copyright {{name}}
   </div>
   <!-- Copyright -->
 

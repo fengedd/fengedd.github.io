@@ -1,4 +1,8 @@
-<h2>Resume</h2>
-
-
-
+<div class="container pdf-container d-flex flex-column bd-highlight mb-3">
+    <div class="">
+        <pdf-viewer [src]="src" [original-size]="false"></pdf-viewer>
+    </div>
+    <div class="d-flex justify-content-center">
+        <a href="{{src}}"><button type="button" class="btn btn-primary btn-lg">Download PDF</button></a>
+    </div>
+</div>

@@ -7,6 +7,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { GlobalConfig } from './GlobalConfig';
 import { MatIconModule } from '@angular/material/icon';
+import { PdfViewerModule } from 'ng2-pdf-viewer'; 
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
@@ -35,7 +36,8 @@ import { ResumeComponent } from './components/resume/resume.component';
     HttpClientModule,
     AppRoutingModule,
     NgbModule,
-    MatIconModule
+    MatIconModule,
+    PdfViewerModule
   ],
   providers: [GlobalConfig],
   bootstrap: [AppComponent]
