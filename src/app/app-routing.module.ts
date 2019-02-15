@@ -16,14 +16,14 @@ const appRoutes: Routes = [
     component: AboutComponent
   },
   {
-    path: 'portfolio',
+    path: 'projects',
     component: GithubprojectlistComponent
   },
   {
     path: 'resume',
     component: ResumeComponent
   },
-  { path: '',   redirectTo: '', pathMatch: 'full' },
+  { path: '',   redirectTo: '', pathMatch: 'full', component: AboutComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 

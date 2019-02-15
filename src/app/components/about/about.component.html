@@ -1,20 +1,38 @@
-<div>
-  <h2>
-    Profile
-  </h2>
-  <ul>
-    <li><a href={{githubLink}}>Github</a></li>
-    <li><a href={{linkedinLink}}>LinkedIn</a></li>
-    <li><a href={{twitterLink}}>Twitter</a></li>
-    <li><a href={{instagramLink}}>Instagram</a></li>
-    <li><a href={{facebookLink}}>Facebook</a></li>
-  </ul>
-</div>
-<div>
-  <h2>
-    About
-  </h2>
-  <p>
-    My name is {{name}}
+<div class="container-fluid jumbotron">
+  <div class="row justify-content-center">
+    <!-- Grid column -->
+    <div class="col-lg-auto">
+
+      <!-- Featured image -->
+      <div class="view overlay">
+        <img src="assets/resume/face.jpg" class="img-fluid rounded float-left" alt="{{name}}">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-4">
+      <h2 class="display-4 h4 mb-4">Hello, my name is</h2>
+      <h1 class="display-3">{{name}}</h1>
+      <p class="font-weight-normal">I'm an aspiring full-stack developer with experience in both frontend and backend development.
+          Constantly learning and looking for new opportunities. Check out my projects and resume here to see how I can help.</p>
+
+      <a class="btn btn-success">Contact me</a>
+
+    </div>
+    <!-- Grid column -->
+  </div>
+
+  
+  <h2 class="display-4"></h2>
+  
+  <p class="lead">
   </p>
 </div>
+
+<app-githubprojectlist></app-githubprojectlist>
+<app-resume></app-resume>

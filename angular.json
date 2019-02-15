@@ -8,11 +8,7 @@
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
-      "schematics": {
-        "@schematics/angular:component": {
-          "styleext": "scss"
-        }
-      },
+
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -27,7 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
+              "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
@@ -136,10 +132,5 @@
       }
     }
   },
-  "defaultProject": "web-app",
-  "schematics": {
-    "@schematics/angular:component": {
-      "styleext": "scss"
-    }
-  }
+  "defaultProject": "web-app"  
 }
