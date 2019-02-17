@@ -4,7 +4,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import {fab} from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
-
+import resume from '../../../assets/resume/resume.json';
 
 @Component({
   selector: 'app-resume',
@@ -17,10 +17,12 @@ export class ResumeComponent implements OnInit {
   fas: any;
   far: any;
   fab: any;
+  summary = 'Summary';
   constructor() {
     library.add(fas, far, fab);
   }
   ngOnInit() {
+    console.log(resume);
   }
 
 }

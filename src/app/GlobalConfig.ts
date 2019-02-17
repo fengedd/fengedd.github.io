@@ -4,5 +4,5 @@ export class GlobalConfig {
   githubLink = 'https://github.com/';
   githubId = 'fengedd';
   linkedinLink = 'https://linkedin.com/in/';
-  linkedinId = 'fengedd';  
+  linkedinId = 'fengedd';
 }
