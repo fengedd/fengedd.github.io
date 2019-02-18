@@ -1,5 +1,5 @@
 export class Project {
-    company: string;
+    organization: string;
     position: string;
     website: string;
     startDate: string;

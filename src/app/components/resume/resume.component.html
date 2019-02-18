@@ -71,8 +71,8 @@
                     <section class="resume-section experience-section mb-5">
                         <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Projects</h2>
                         <div class="resume-section-content">
-                            <div class="resume-timeline position-relative">
-                                <app-project-entry  ></app-project-entry>
+                            <div *ngFor="let project of resume.volunteer" class="resume-timeline position-relative">
+                                <app-project-entry [project]="project"></app-project-entry>
                             </div>
                             <!--//resume-timeline-->
                         </div>
@@ -83,7 +83,7 @@
                     <section class="resume-section skills-section mb-5">
                         <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Skills &amp; Tools
                         </h2>
-                        <app-skill></app-skill>
+                        <app-skill *ngFor="let skill of resume.skills"></app-skill>
                     </section>
                     <!--//skills-section-->
                     <section class="resume-section education-section mb-5">
