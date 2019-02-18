@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Project } from './project';
+import { MOCK } from './mock';
 
 @Component({
   selector: 'app-project-entry',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectEntryComponent implements OnInit {
 
+
+  @Input() project: Project;
   constructor() { }
 
   ngOnInit() {
+    this.project = MOCK;
+    console.log(MOCK);
   }
 
 }

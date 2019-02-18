@@ -19,36 +19,36 @@
                 <img class="mr-3 img-fluid picture mx-auto" src="assets/resume/face.jpg" alt="">
                 <div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
                     <div class="primary-info">
-                        <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">Edd Feng</h1>
-                        <div class="title mb-3">Full Stack Developer</div>
+                        <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">{{resume.basics.name}}</h1>
+                        <div class="title mb-3">{{resume.basics.label}}</div>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="#">
+                            <li class="mb-2"><a href="mailto:{{resume.basics.email}}">
                                     <fa-icon [icon]="['far', 'envelope']"></fa-icon>
                                     <i class="far fa-envelope fa-fw mr-2"
-                                        data-fa-transform="grow-3"></i>Steve.Doe@website.com
+                                        data-fa-transform="grow-3"></i>{{resume.basics.email}}
                                 </a></li>
-                            <li><a href="#">
+                            <li><a href="tel:{{resume.basics.phone}}">
                                     <fa-icon [icon]="['fas', 'mobile-alt']"></fa-icon><i
-                                        class="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-6"></i>0123
-                                    456 78900
+                                        class="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-6"></i>
+                                    {{resume.basics.phone}}
                                 </a></li>
                         </ul>
                     </div>
                     <!--//primary-info-->
                     <div class="secondary-info ml-md-auto mt-2">
                         <ul class="resume-social list-unstyled">
-                            <li class="mb-3"><a href="#"><span class="fa-container text-center mr-2">
+                            <li class="mb-3"><a href="{{resume.basics.profiles[0].url}}"><span class="fa-container text-center mr-2">
                                         <fa-icon [icon]="['fab', 'linkedin-in']"></fa-icon>
                                         <i class="fab fa-linkedin-in fa-fw"></i>
-                                    </span>linkedin.com/in/stevedoe</a>
+                                    </span>{{resume.basics.profiles[0].username}}</a>
                             </li>
-                            <li class="mb-3"><a href="#"><span class="fa-container text-center mr-2">
+                            <li class="mb-3"><a href="{{resume.basics.profiles[1].url}}"><span class="fa-container text-center mr-2">
                                         <fa-icon [icon]="['fab', 'github-alt']"></fa-icon>
                                         <i class="fab fa-github-alt fa-fw"></i>
-                                    </span>github.com/username</a></li>
-                            <li><a href="#"><span class="fa-container text-center mr-2">
+                                    </span>{{resume.basics.profiles[1].username}}</a></li>
+                            <li><a href="{{resume.basics.profiles[1].url}}"><span class="fa-container text-center mr-2">
                                         <fa-icon [icon]="['fas', 'globe']"></fa-icon><i class="fas fa-globe"></i>
-                                    </span>yourwebsite.com</a></li>
+                                    </span>{{resume.basics.profiles[1].username}}</a></li>
                         </ul>
                     </div>
                     <!--//secondary-info-->
@@ -62,7 +62,7 @@
             <section class="resume-section summary-section mb-5">
                 <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary</h2>
                 <div class="resume-section-content">
-                    <p class="mb-0">{{summary}}</p>
+                    <p class="mb-0">{{resume.basics.summary}}</p>
                 </div>
             </section>
             <!--//summary-section-->
@@ -72,7 +72,7 @@
                         <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Projects</h2>
                         <div class="resume-section-content">
                             <div class="resume-timeline position-relative">
-                                <app-project-entry></app-project-entry>
+                                <app-project-entry  ></app-project-entry>
                             </div>
                             <!--//resume-timeline-->
                         </div>
@@ -98,7 +98,7 @@
                             </ul>
                         </div>
                     </section>
-                    <!--//education-section--> 
+                    <!--//education-section-->
                     <!--//interests-section-->
                     <section class="resume-section language-section mb-5">
                         <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Language</h2>
@@ -108,7 +108,7 @@
                                         class="text-muted font-weight-normal">(Native)</small></li>
                                 <li class="mb-2 align-middle"><span
                                         class="resume-lang-name font-weight-bold">Chinese</span> <small
-                                        class="text-muted font-weight-normal">(Fluent)</small></li>                                
+                                        class="text-muted font-weight-normal">(Fluent)</small></li>
                             </ul>
                         </div>
                     </section>
@@ -118,7 +118,7 @@
                         <div class="resume-section-content">
                             <ul class="list-unstyled">
                                 <li class="mb-1">Weightlifting</li>
-                                <li class="mb-1">Reading</li>                                
+                                <li class="mb-1">Reading</li>
                             </ul>
                         </div>
                     </section>

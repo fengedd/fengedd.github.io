@@ -14,16 +14,18 @@
       "countryCode": "CA",
       "region": "British Columbia"
     },
-    "profiles": [{
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "fengedd",
+        "url": "https://linkedin.com/in/fengedd"
+      },
+      {
       "network": "GitHub",
       "username": "fengedd",
       "url": "https://github.com/fengedd"
-    },
-    {
-      "network": "LinkedIn",
-      "username": "fengedd",
-      "url": "https://linkedin.com/in/fengedd"
     }
+    
   ]
   },
   "work": [{
@@ -34,8 +36,12 @@
     "endDate": "2014-01-01",
     "summary": "Description...",
     "highlights": [
-      "Started the company"
-    ]
+      "Started the company",
+      "1",
+      "2",
+      "3"
+    ],
+    "technologies": ["Angular", "Python", "jQuery", "Webpack", "HTML/SASS", "PostgreSQL"]
   }],
   "volunteer": [{
     "organization": "Organization",

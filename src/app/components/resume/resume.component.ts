@@ -18,6 +18,7 @@ export class ResumeComponent implements OnInit {
   far: any;
   fab: any;
   summary = 'Summary';
+  resume = resume;
   constructor() {
     library.add(fas, far, fab);
   }
