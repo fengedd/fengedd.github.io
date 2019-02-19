@@ -4775,14 +4775,14 @@
     border-radius: 0.25rem;
   }
   
-  .progress-bar {
+  .progress-bar {    
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    background-color: #434E5E;
+    /*background-color: #434E5E;*/
     transition: width 0.6s ease;
   }
   

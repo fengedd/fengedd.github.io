@@ -152,7 +152,7 @@
   "skills": [
     {
       "name": "Web Development",
-      "level": "Master",
+      "level": "1",
       "keywords": [
         "HTML",
         "CSS",
@@ -161,7 +161,7 @@
     },
     {
       "name": "HTML / CSS",
-      "level": "7",
+      "level": "2",
       "keywords": [
         "HTML",
         "CSS",
@@ -170,7 +170,7 @@
     },
     {
       "name": "Angular",
-      "level": "7",
+      "level": "3",
       "keywords": [
         "HTML",
         "CSS",
@@ -179,7 +179,7 @@
     },
     {
       "name": "React",
-      "level": "7",
+      "level": "4",
       "keywords": [
         "HTML",
         "CSS",

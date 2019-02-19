@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Input, Component, OnInit } from '@angular/core';
+import {Skill} from './skill';
 
 @Component({
   selector: 'app-skill',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillComponent implements OnInit {
 
+  width: string;
   constructor() { }
-
+  @Input() skill: Skill;
+  
   ngOnInit() {
+    this.width = Number(this.skill.level) * 10 + '%';
+    console.log(this.width);
+    console.log('7000%');
   }
 
 }
