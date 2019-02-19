@@ -13,9 +13,7 @@ export class SkillComponent implements OnInit {
   @Input() skill: Skill;
   
   ngOnInit() {
-    this.width = Number(this.skill.level) * 10 + '%';
-    console.log(this.width);
-    console.log('7000%');
+    this.width = this.skill.level + '%';
   }
 
 }

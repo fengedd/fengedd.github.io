@@ -8,11 +8,26 @@ import { Project } from './project';
 })
 export class ProjectEntryComponent implements OnInit {
 
-
+  organization: string;
+  position: string;
+  website: string;
+  startDate: Date;
+  endDate: Date;
+  summary: string;
+  highlights: string[];
+  technologies: string[];
   @Input() project: Project;
   constructor() { }
 
   ngOnInit() {
+    this.organization = this.project.organization;
+    this.position = this.project.position;
+    this.website = this.project.website;
+    this.startDate = new Date(this.project.startDate);
+    this.endDate = new Date(this.project.endDate);
+    this.summary = this.project.summary;
+    this.highlights = this.project.highlights;
+    this.technologies = this.project.technologies;
   }
 
 }
