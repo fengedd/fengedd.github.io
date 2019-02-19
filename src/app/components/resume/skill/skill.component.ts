@@ -13,7 +13,7 @@ export class SkillComponent implements OnInit {
   @Input() skill: Skill;
   
   ngOnInit() {
-    this.width = this.skill.level + '%';
+    this.width = this.skill.level;
   }
 
 }

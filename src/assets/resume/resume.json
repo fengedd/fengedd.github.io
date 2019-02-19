@@ -53,9 +53,9 @@
   ],
   "volunteer": [
     {
-      "organization": "github.com/fengedd",
+      "organization": "Dota 2 Toxic Web API",
       "position": "President",
-      "website": "Dota 2 Toxic Web API",
+      "website": "https://github.com/fengedd/dota-toxic-api",
       "startDate": "2019-01-01",
       "endDate": "2019-01-01",
       "summary": "Backend web API built with JavaScript, NodeJS, Express, Docker, Redis, PostgreSQL that takes a player ID and processes information about player’s account history",
@@ -76,12 +76,7 @@
       "startDate": "2013-01-01",
       "endDate": "2014-01-01",
       "summary": "Description...",
-      "highlights": [
-        "Started the company",
-        "1",
-        "2",
-        "3"
-      ],
+      "highlights": [],
       "technologies": []
     },
     {
@@ -140,7 +135,7 @@
   "skills": [
     {
       "name": "Web Development",
-      "level": "1",
+      "level": "0.11",
       "keywords": [
         "HTML",
         "CSS",
@@ -149,7 +144,7 @@
     },
     {
       "name": "HTML / CSS",
-      "level": "2",
+      "level": "0.2",
       "keywords": [
         "HTML",
         "CSS",
@@ -158,7 +153,7 @@
     },
     {
       "name": "Angular",
-      "level": "3",
+      "level": "0.3",
       "keywords": [
         "HTML",
         "CSS",
@@ -167,7 +162,7 @@
     },
     {
       "name": "React",
-      "level": "4",
+      "level": "0.4",
       "keywords": [
         "HTML",
         "CSS",
