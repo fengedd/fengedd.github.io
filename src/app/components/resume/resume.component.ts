@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faMobileAlt, faGlobe,  } from '@fortawesome/free-solid-svg-icons';
+import { faMobileAlt, faGlobe, faFileDownload} from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import {faLinkedinIn, faGithubAlt} from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -16,7 +16,7 @@ export class ResumeComponent implements OnInit {
   summary = 'Summary';
   resume = resume;
   constructor() {
-    library.add(faMobileAlt, faEnvelope, faLinkedinIn, faGithubAlt, faGlobe);
+    library.add(faMobileAlt, faEnvelope, faLinkedinIn, faGithubAlt, faGlobe, faFileDownload);
   }
   ngOnInit() {
   }

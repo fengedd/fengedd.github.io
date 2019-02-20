@@ -10,14 +10,17 @@
 </div>
 -->
 
-<div class="row">
-<h1>Resume</h1>
-<a href="{{src}}"><button type="button" class="btn btn-primary btn-lg">Download PDF</button></a>
+<div class="row container-fluid my-1">
+    <h1 class="col">Resume</h1>
+    <a href="{{src}}"><button type="button" class="btn-primary btn-lg col d-flex justify-content-end">
+            <fa-icon [icon]="['fas', 'file-download']"></fa-icon> &nbsp; Download
+            PDF
+        </button></a>
 </div>
 
 
 <article class="resume-wrapper text-center position-relative">
-    
+
     <div class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
         <header class="resume-header pt-4 pt-md-0">
             <div class="media flex-column flex-md-row">
@@ -116,52 +119,54 @@
                             </ul>
                         </div>
                         -->
-                    </section>                
-                <!--//skills-section-->
+                    </section>
+                    <!--//skills-section-->
 
-                <section class="resume-section education-section mb-5">
-                    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
-                    <div class="resume-section-content">
-                        <ul class="list-unstyled">
-                            <li class="mb-2">
-                                <div class="resume-degree font-weight-bold">{{resume.education[0].studyType}} in {{resume.education[0].area}}</div>
-                                <div class="resume-degree-org">{{resume.education[0].institution}}</div>
-                                <div class="resume-degree-time">{{resume.education[0].endDate | date:'y'}}</div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <!--//education-section-->
+                    <section class="resume-section education-section mb-5">
+                        <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
+                        <div class="resume-section-content">
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <div class="resume-degree font-weight-bold">{{resume.education[0].studyType}} in
+                                        {{resume.education[0].area}}</div>
+                                    <div class="resume-degree-org">{{resume.education[0].institution}}</div>
+                                    <div class="resume-degree-time">{{resume.education[0].endDate | date:'y'}}</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!--//education-section-->
 
-                <!--//interests-section-->
-                <section class="resume-section language-section mb-5">
-                    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Language</h2>
-                    <div class="resume-section-content">
-                        <ul class="list-unstyled resume-lang-list">                            
-                            <li class="mb-2"><span class="resume-lang-name font-weight-bold">English</span> <small
-                                    class="text-muted font-weight-normal">(Native)</small></li>
-                            <li class="mb-2 align-middle"><span class="resume-lang-name font-weight-bold">Chinese</span>
-                                <small class="text-muted font-weight-normal">(Fluent)</small></li>
-                        </ul>
-                    </div>
-                </section>
-                <!--//language-section-->
-                <section class="resume-section interests-section mb-5">
-                    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Interests</h2>
-                    <div class="resume-section-content">
-                        <ul class="list-unstyled">
-                            <li class="mb-1">{{resume.interests[0].name}}</li>
-                            <li class="mb-1">{{resume.interests[1].name}}</li>
-                        </ul>
-                    </div>
-                </section>
-                <!--//interests-section-->
+                    <!--//interests-section-->
+                    <section class="resume-section language-section mb-5">
+                        <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Language</h2>
+                        <div class="resume-section-content">
+                            <ul class="list-unstyled resume-lang-list">
+                                <li class="mb-2"><span class="resume-lang-name font-weight-bold">English</span> <small
+                                        class="text-muted font-weight-normal">(Native)</small></li>
+                                <li class="mb-2 align-middle"><span
+                                        class="resume-lang-name font-weight-bold">Chinese</span>
+                                    <small class="text-muted font-weight-normal">(Fluent)</small></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!--//language-section-->
+                    <section class="resume-section interests-section mb-5">
+                        <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Interests</h2>
+                        <div class="resume-section-content">
+                            <ul class="list-unstyled">
+                                <li class="mb-1">{{resume.interests[0].name}}</li>
+                                <li class="mb-1">{{resume.interests[1].name}}</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!--//interests-section-->
 
+                </div>
             </div>
+            <!--//row-->
         </div>
-        <!--//row-->
-    </div>
-    <!--//resume-body-->
+        <!--//resume-body-->
 
 
     </div>
