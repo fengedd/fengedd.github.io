@@ -7,14 +7,12 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class IconService {
 
-  constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer) {
-    console.log('Starting Icon Service...');
+  constructor(
+    private matIconRegistry: MatIconRegistry,
+    private domSanitizer: DomSanitizer) {
+    console.log('Icon service running...');
     this.matIconRegistry.addSvgIconSet(
       this.domSanitizer.bypassSecurityTrustResourceUrl('../../../assets/icons/program_languages.svg')
-    );
-
-    this.matIconRegistry.addSvgIconSet(
-      this.domSanitizer.bypassSecurityTrustResourceUrl('../../../assets/icons/media.svg')
     );
   }
 }

@@ -14,6 +14,7 @@ export class GithubprojectlistComponent implements OnInit {
   githubLink: String;
   githubService: GithubprojectsService;
   projectData: any;
+  iconServ: IconService;
   constructor(private globalconfig: GlobalConfig, private ghService: GithubprojectsService, private icService: IconService) {}
 
   ngOnInit() {
@@ -29,6 +30,4 @@ export class GithubprojectlistComponent implements OnInit {
         this.projectData = data;
       });
   }
-
-
 }
