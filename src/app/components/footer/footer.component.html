@@ -4,21 +4,21 @@
     <!-- Grid row-->
     <div class="container d-flex justify-content-center">
       <div class="p-1">
-        <!--Linkedin -->
+        <!--Linkedin <mat-icon svgIcon="linkedin"></mat-icon>-->
         <a class="circle" href={{linkedinUrl}}>
-          <mat-icon svgIcon="linkedin"></mat-icon>
+            <fa-icon [icon]="['fab', 'linkedin-in']"></fa-icon>          
         </a>
       </div>
       <div class="p-1">
-        <!--GitHub-->
-        <a class="circle" href={{githubUrl}}>
-          <mat-icon svgIcon="github"></mat-icon>
+        <!--GitHub <mat-icon svgIcon="github"></mat-icon>-->
+        <a class="circle" href={{githubUrl}}>          
+          <fa-icon [icon]="['fab', 'github']"></fa-icon>
         </a>
       </div>
       <div class="p-1">
-        <!--Email -->
-        <a class="circle" href="mailto:{{email}}">
-          <mat-icon svgIcon="email"></mat-icon>
+        <!--Email <mat-icon svgIcon="email"></mat-icon>-->
+        <a class="circle" href="mailto:{{email}}">      
+            <fa-icon [icon]="['far', 'envelope']"></fa-icon>
         </a>
       </div>
     </div>
