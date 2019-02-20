@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 // import { readFileSync } from 'fs';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { far } from '@fortawesome/free-regular-svg-icons';
-import {fab} from '@fortawesome/free-brands-svg-icons';
+import { faMobileAlt, faGlobe,  } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import {faLinkedinIn, faGithubAlt} from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import resume from '../../../assets/resume/resume.json';
 
@@ -20,7 +20,7 @@ export class ResumeComponent implements OnInit {
   summary = 'Summary';
   resume = resume;
   constructor() {
-    library.add(fas, far, fab);
+    library.add(faMobileAlt, faEnvelope, faLinkedinIn, faGithubAlt, faGlobe);
   }
   ngOnInit() {
     console.log(resume);

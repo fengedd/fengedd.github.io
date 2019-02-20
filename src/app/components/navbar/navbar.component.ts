@@ -9,6 +9,7 @@ import { GlobalConfig } from '../../GlobalConfig';
 export class NavbarComponent implements OnInit {
 
   name: string;
+  public isCollapsed = false;
 
   constructor(private globalConfig: GlobalConfig) { }
 
