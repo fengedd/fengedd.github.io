@@ -1,0 +1,283 @@
+{
+  "basics": {
+    "name": "Edd Feng",
+    "label": "Full Stack Developer",
+    "picture": "",
+    "email": "fengedd@gmail.com",
+    "phone": "778 223 5558",
+    "website": "https://github.com/fengedd",
+    "summary": "A summary of John Doe...",
+    "location": {
+      "address": "14715 31 AVE",
+      "postalCode": "V4P 3E7",
+      "city": "Vancouver",
+      "countryCode": "CA",
+      "region": "British Columbia"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "fengedd",
+        "url": "https://linkedin.com/in/fengedd"
+      },
+      {
+        "network": "GitHub",
+        "username": "fengedd",
+        "url": "https://github.com/fengedd"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Company",
+      "position": "President",
+      "website": "http://company.com",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Description...",
+      "highlights": [
+        "Started the company",
+        "1",
+        "2",
+        "3"
+      ],
+      "technologies": [
+        "Angular",
+        "Python",
+        "jQuery",
+        "Webpack",
+        "HTML/SASS",
+        "PostgreSQL"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Personal Website",
+      "position": "TypeScript",
+      "website": "https://github.com/fengedd/dota-toxic-api",
+      "startDate": "2019-11-11",
+      "endDate": "2019-11-11",
+      "summary": "Personal website built using the Angular framework",
+      "highlights": ["Makes HTTP requests to GitHub API to auto-generate project components."],
+      "technologies": [
+        "TypeScript",
+        "Bootstrap",
+        "Angular",
+        "Node.JS",
+        "HTML / CSS"           
+      ]
+    },
+    {
+      "organization": "Dota 2 Toxic Web API",
+      "position": "JavaScript",
+      "website": "https://github.com/fengedd/dota-toxic-api",
+      "startDate": "2019-11-11",
+      "endDate": "2019-11-11",
+      "summary": "Backend web API built with JavaScript, NodeJS, Express, Docker, Redis, PostgreSQL that takes a player ID and processes information about player’s account history",
+      "highlights": [],
+      "technologies": [
+        "JavaScript",
+        "Node.JS",
+        "Express",
+        "PostgreSQL",
+        "Docker",
+        "Redis"
+      ]
+    },
+    {
+      "organization": "Reddit Comment Scraper",
+      "position": "Java",
+      "website": "https://github.com/fengedd/Reddit-Comment-Scraper",
+      "startDate": "2018-11-11",
+      "endDate": "2018-11-11",
+      "summary": "Web scraper that scrapes the comment sections of reddit asynchronously and outputs user comments to a text file.",
+      "highlights": ["Thread pool assigns asynchronous web crawlers that add URLs to a task queue and add comment data to results. Program is terminated with an asynchronous method invocation to a thread pool closer task."],
+      "technologies": ["Java"]
+    },
+    {
+      "organization": "Markov Chain Sentence Generator",
+      "position": "Java",
+      "website": "https://github.com/fengedd/markov-sentence-generator",
+      "startDate": "2018-11-11",
+      "endDate": "2018-11-11",
+      "summary": "Program takes a corpus of text and generates sentences based on statistical inference of the corpus.",
+      "highlights": [
+        "Sentences are generated using Markov Chain and Bigrams as a language model. The Markov Chain is modeled with a Red-Black tree and an adjacency list graph."   
+      ],
+      "technologies": [
+        "Java"
+      ]
+    },
+    {
+      "organization": "Scrabble Solver",
+      "position": "Java",
+      "website": "https://github.com/fengedd/scrabblesolver",
+      "startDate": "2018-11-11",
+      "endDate": "2018-11-11",
+      "summary": "Program takes scrabble tiles as inputs and outputs the valid permutations of the tiles and their respective scores.",
+      "highlights": [
+        "Creates a lookup table from a dictionary by grouping all word entries by their sorted lexicographic order."   
+      ],
+      "technologies": [
+        "Java"
+      ]
+    },
+    {
+      "organization": "SpeedRun React-Native Timer App",
+      "position": "TypeScript",
+      "website": "https://github.com/fengedd/irl-speedrun",
+      "startDate": "2018-11-11",
+      "endDate": "2018-11-11",
+      "summary": "Created a timer app to track time spent on each task in a given session. Made with flux and container/component pattern with Material Design system.",
+      "highlights": [        
+      ],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Flux",
+        "HTML / CSS"        
+      ]
+    },
+    {
+      "organization": "UBC Courses Database",
+      "position": "TypeScript",
+      "website": "<private>",
+      "startDate": "2017-11-11",
+      "endDate": "2017-11-11",
+      "summary": "Created a back-end database for UBC courses which parses a dataset of courses and allows for querying on the courses. ",
+      "highlights": [        
+      ],
+      "technologies": [
+        "React",
+        "TypeScript"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of British Columbia",
+      "area": "Economics",
+      "studyType": "B.A.",
+      "startDate": "2011-09-01",
+      "endDate": "2016-06-01",
+      "gpa": "0.0",
+      "courses": [
+        "Software Engineering, Algorithms & Data Structures"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "website": "http://publication.com",
+      "summary": "Description..."
+    }
+  ],
+  "skills": [
+    {
+      "name": "TypeScript",
+      "level": "0.75",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "0.7",
+      "keywords": []
+    },
+    {
+      "name": "Java",
+      "level": "0.75",
+      "keywords": []
+    },    
+    {
+      "name": "C# / .NET",
+      "level": "0.4",
+      "keywords": []
+    },
+
+    {
+      "name": "HTML / CSS",
+      "level": "0.7",
+      "keywords": []
+    },
+    {
+      "name": "Angular",
+      "level": "0.5",
+      "keywords": []
+    },
+    {
+      "name": "React",
+      "level": "0.5",
+      "keywords": []
+    },
+
+    {
+      "name": "SQL",
+      "level": "0.3",
+      "keywords": []
+    },
+    {
+      "name": "Linux",
+      "level": "0.10",
+      "keywords": []
+    },
+    {
+      "name": "Docker",
+      "level": "0.10",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "0.45",
+      "keywords": []
+    },
+    {
+      "name": "CLI",
+      "level": "0.25",
+      "keywords": []
+    },
+    {
+      "name": "Node.JS",
+      "level": "0.56",
+      "keywords": []
+    }
+    
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native"
+    },
+    {
+      "language": "Chinese",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Weightlifting",
+      "keywords": []
+    },
+    {
+      "name": "Reading",
+      "keywords": []
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference..."
+    }
+  ]
+}
