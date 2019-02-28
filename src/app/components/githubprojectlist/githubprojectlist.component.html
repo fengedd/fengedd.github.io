@@ -1,20 +1,24 @@
-<h1>Projects</h1>
-<div class="container-fluid mx-1">
-    <ul class="list-unstyled ">
-        <div *ngFor="let proj of projectData">
-            <div class="media border-bottom p-3">
-                <span class="mr-3 ">
-                    <mat-icon class="icon" svgIcon="{{proj.language}}"></mat-icon>                                                 
-                </span>
-                <div class="media-body">
-                    <h5 class="mt-0"><a href="{{proj.html_url}}">{{proj.name}}</a> <small><i> Updated:
-                                {{proj.updated_at | date}}</i></small></h5>
-                    {{proj.description}}
+<div class="container mx-auto">
+    <div class="row">
+        <div class="col">
+            <h1>Projects</h1>
+            <ul class="list-unstyled ">
+                <div *ngFor="let proj of projectData">
+                    <div class="media border-bottom p-3">
+                        <span class="mr-3 ">
+                            <mat-icon class="icon" svgIcon="{{proj.language}}"></mat-icon>
+                        </span>
+                        <div class="media-body">
+                            <h5 class="mt-0"><a href="{{proj.html_url}}">{{proj.name}}</a> <small><i> Updated:
+                                        {{proj.updated_at | date}}</i></small></h5>
+                            {{proj.description}}
+                        </div>
+                        <div class="bd"></div>
+                    </div>
                 </div>
-                <div class="bd"></div>
-            </div>
+            </ul>
         </div>
-    </ul>
+    </div>
 </div>
 
 <!-- <div [innerHTML]="proj | githubProjects"></div> -->
