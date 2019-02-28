@@ -7,7 +7,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { GlobalConfig } from './GlobalConfig';
 import { MatIconModule } from '@angular/material/icon';
-import { PdfViewerModule } from 'ng2-pdf-viewer';
+
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
@@ -19,8 +19,7 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProjectEntryComponent } from './components/resume/project-entry/project-entry.component';
 import { SkillComponent } from './components/resume/skill/skill.component';
-
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -40,8 +39,8 @@ import { SkillComponent } from './components/resume/skill/skill.component';
     AppRoutingModule,
     NgbModule,
     MatIconModule,
-    PdfViewerModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule
   ],
   providers: [GlobalConfig],
   bootstrap: [AppComponent]

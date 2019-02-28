@@ -7,7 +7,7 @@ import { IconService } from '../../service/icon/icon.service';
 @Component({
   selector: 'app-githubprojectlist',
   templateUrl: './githubprojectlist.component.html',
-  styleUrls: ['./githubprojectlist.component.css']
+  styleUrls: ['./githubprojectlist.component.css'],
 })
 export class GithubprojectlistComponent implements OnInit {
 
