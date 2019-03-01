@@ -1,38 +1,31 @@
-<div class="container-fluid jumbotron">
-  <div class="row justify-content-center">
-    <!-- Grid column -->
-    <div class="col-lg-auto">
-
-      <!-- Featured image -->
-      <div class="view overlay">
-        <img src="assets/resume/face.jpg" class="img-fluid rounded float-left" alt="{{name}}">
-        <a>
-          <div class="mask rgba-white-slight"></div>
-        </a>
+<div class="container-fluid jumbotron border border-danger">
+    <div class="container">
+      <div class="row equal align-items-center border border-danger">
+        <!-- Grid column -->
+        <div class="col-sm-3 border border-success">
+          <!-- Featured image -->        
+            <img height="250" src="assets/resume/face.jpg" class="rounded" alt="{{name}}">          
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-sm-9 border border-success">
+          <h2 class="lead">Hello, my name is</h2>
+          <h1 class="display-3">{{name}}</h1>
+          <p class="lead">
+            I'm an aspiring full-stack developer with experience in both frontend and backend
+            development.
+            Constantly learning and looking for new opportunities. Check out my projects and resume here to see how I can
+            help.
+            <a href="mailto:{{email}}"class="btn text-white btn-dark">Contact me</a>
+          </p>
+          
+  
+        </div>
+        <!-- Grid column -->
       </div>
-
     </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
-    <div class="col-lg-4">
-      <h2 class="display-4 h4 mb-4">Hello, my name is</h2>
-      <h1 class="display-3">{{name}}</h1>
-      <p class="font-weight-normal">I'm an aspiring full-stack developer with experience in both frontend and backend development.
-          Constantly learning and looking for new opportunities. Check out my projects and resume here to see how I can help.</p>
-
-      <a class="btn btn-success">Contact me</a>
-
-    </div>
-    <!-- Grid column -->
   </div>
-
-  
-  <h2 class="display-4"></h2>
-  
-  <p class="lead">
-  </p>
-</div>
 
 <app-githubprojectlist></app-githubprojectlist>
 <app-resume></app-resume>
