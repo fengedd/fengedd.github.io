@@ -4,6 +4,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import {faLinkedinIn, faGithubAlt} from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import resume from '../../../assets/resume/resume.json';
+import { GlobalConfig } from '../../GlobalConfig';
 
 @Component({
   selector: 'app-resume',
@@ -12,13 +13,14 @@ import resume from '../../../assets/resume/resume.json';
 })
 
 export class ResumeComponent implements OnInit {
-  src = '/assets/resume/resume.pdf';
+  src: string;
   summary = 'Summary';
   resume = resume;
-  constructor() {
+  constructor(private globalConfig: GlobalConfig) {
     library.add(faMobileAlt, faEnvelope, faLinkedinIn, faGithubAlt, faGlobe, faFileDownload);
   }
   ngOnInit() {
+    this.src = this.globalConfig.githubPagesLink + 'assets/resume/resume.pdf';
   }
 
 }

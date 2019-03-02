@@ -5,8 +5,8 @@
     "picture": "",
     "email": "fengedd@gmail.com",
     "phone": "778 223 5558",
-    "website": "https://github.com/fengedd",
-    "summary": "A summary of John Doe...",
+    "website": "https://fengedd.github.io/personal-website",
+    "summary": "Full Stack Developer",
     "location": {
       "address": "",
       "postalCode": "",
@@ -55,7 +55,7 @@
     {
       "organization": "Personal Website",
       "position": "TypeScript",
-      "website": "https://github.com/fengedd/dota-toxic-api",
+      "website": "https://fengedd.github.io/personal-website",
       "startDate": "2019-11-11",
       "endDate": "2019-11-11",
       "summary": "Personal website built using the Angular framework",
@@ -74,7 +74,7 @@
       "website": "https://github.com/fengedd/dota-toxic-api",
       "startDate": "2019-11-11",
       "endDate": "2019-11-11",
-      "summary": "Backend web API built with JavaScript, NodeJS, Express, Docker, Redis, PostgreSQL that takes a player ID and processes information about player’s account history",
+      "summary": "Backend web API built with JavaScript, NodeJS, Express, Docker, Redis, PostgreSQL that takes a user ID and processes information about user's account history",
       "highlights": [],
       "technologies": [
         "JavaScript",

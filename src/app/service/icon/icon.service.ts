@@ -13,7 +13,6 @@ export class IconService {
     private domSanitizer: DomSanitizer,
     private globalConfig: GlobalConfig
     ) {
-    console.log('Icon service running deux...');
     this.matIconRegistry.addSvgIconSet(
       this.domSanitizer.bypassSecurityTrustResourceUrl('./assets/icons/program_languages.svg')
     );
