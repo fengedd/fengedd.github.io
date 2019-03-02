@@ -7,7 +7,9 @@ Makes HTTP requests to GitHub API to auto-generate project components.
 
 ## Usage
 
-See https://angular.io/cli .
+See: https://angular.io/cli for commands.
+
+Visit: https://fengedd.github.io/personal-website .
 
 
 ## License
